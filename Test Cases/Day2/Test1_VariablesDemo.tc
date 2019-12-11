@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Test1_VariablesDemo</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>da394a14-481f-4594-879b-85589d97e6d5</testCaseGuid>
+   <variable>
+      <defaultValue>'abc'</defaultValue>
+      <description></description>
+      <id>d7f41446-b895-458d-a34c-ea8659c55b50</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'xyz'</defaultValue>
+      <description></description>
+      <id>8876e317-1c27-4c48-ae5e-a958f3bef0a7</id>
+      <masked>false</masked>
+      <name>dob</name>
+   </variable>
+</TestCaseEntity>
