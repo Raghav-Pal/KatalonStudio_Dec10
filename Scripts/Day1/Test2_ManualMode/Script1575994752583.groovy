@@ -21,7 +21,7 @@ WebUI.setText(findTestObject('Page_OrangeHRM/input_Panel de inicio de sesin_txtU
 
 WebUI.setEncryptedText(findTestObject('Page_OrangeHRM/input_Nombre de usuario_txtPassword'), GlobalVariable.PASSWORD)
 
-WebUI.click(findTestObject('Page_CURA Healthcare Service/button_Login'))
+WebUI.click(findTestObject('Page_OrangeHRM/input_Contrasea_Submit'))
 
 WebUI.closeBrowser()
 
