@@ -17,11 +17,11 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.URL)
 
-WebUI.setText(findTestObject('Page_OrangeHRM/input_Panel de inicio de sesin_txtUsername'), GlobalVariable.USERNAME)
+WebUI.setText(findTestObject('WEB/Page_OrangeHRM/input_Panel de inicio de sesin_txtUsername'), GlobalVariable.USERNAME)
 
-WebUI.setEncryptedText(findTestObject('Page_OrangeHRM/input_Nombre de usuario_txtPassword'), GlobalVariable.PASSWORD)
+WebUI.setEncryptedText(findTestObject('WEB/Page_OrangeHRM/input_Nombre de usuario_txtPassword'), GlobalVariable.PASSWORD)
 
-WebUI.click(findTestObject('Page_OrangeHRM/input_Contrasea_Submit'))
+WebUI.click(findTestObject('WEB/Page_OrangeHRM/input_Contrasea_Submit'))
 
 WebUI.closeBrowser()
 

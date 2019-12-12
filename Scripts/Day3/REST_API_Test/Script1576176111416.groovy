@@ -12,19 +12,26 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Day2/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('WEB/Page_OrangeHRM/b_Leave'))
 
-WebUI.click(findTestObject('WEB/Page_OrangeHRM/b_Recruitment'))
 
-WebUI.click(findTestObject('WEB/Page_OrangeHRM/b_Performance'))
+listUsersResult = WS.sendRequest(findTestObject('API/REST/ListUsers'))
 
-WebUI.click(findTestObject('WEB/Page_OrangeHRM/b_Directory'))
+def slurper = new groovy.json.JsonSlurper()
 
-WebUI.click(findTestObject('WEB/Page_OrangeHRM/b_Dashboard'))
+def result = slurper.parseText(listUsersResult.getResponseBodyContent())
 
-WebUI.closeBrowser()
+def value = result.data[4].first_name
+
+println '  Value is '+value
+
+GlobalVariable.USERTOUPDATE = value
+
+println '  Global Variable is '+GlobalVariable.USERTOUPDATE
+
+
+
+
+WS.sendRequestAndVerify(findTestObject('API/REST/UpdateUser'))
 

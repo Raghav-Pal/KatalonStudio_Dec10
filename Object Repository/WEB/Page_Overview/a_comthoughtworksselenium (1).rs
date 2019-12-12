@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_comthoughtworksselenium</name>
+   <name>a_comthoughtworksselenium (1)</name>
    <tag></tag>
-   <elementGuidId>3071c218-e0e1-428d-a756-30789f473ac2</elementGuidId>
+   <elementGuidId>5f212ffe-041e-4915-b4e1-815ee82048aa</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
          <value>//a[contains(text(),'com.thoughtworks.selenium')]</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[@href = 'com/thoughtworks/selenium/package-frame.html' and (text() = 'com.thoughtworks.selenium' or . = 'com.thoughtworks.selenium') and @ref_element = 'Object Repository/Page_Overview/frame_Capture object_packageListFrame']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,14 +24,7 @@
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
-      <value>com/thoughtworks/selenium/package-frame.html</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>target</name>
-      <type>Main</type>
-      <value>packageFrame</value>
+      <value>com/thoughtworks/selenium/package-summary.html</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -49,14 +38,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[1]/div[@class=&quot;indexContainer&quot;]/ul[1]/li[1]/a[1]</value>
+      <value>/html[1]/body[1]/div[@class=&quot;contentContainer&quot;]/table[@class=&quot;overviewSummary&quot;]/tbody[2]/tr[@class=&quot;altColor&quot;]/td[@class=&quot;colFirst&quot;]/a[1]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Page_Overview/frame_Capture object_packageListFrame</value>
+      <value>Object Repository/WEB/Page_Overview/frame_Capture object_classFrame</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,14 +59,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Packages'])[1]/following::a[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/following::a[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='All Classes'])[1]/following::a[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Package'])[2]/following::a[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,13 +87,13 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>//a[contains(@href, 'com/thoughtworks/selenium/package-frame.html')]</value>
+      <value>//a[contains(@href, 'com/thoughtworks/selenium/package-summary.html')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li/a</value>
+      <value>//td/a</value>
    </webElementXpaths>
 </WebElementEntity>

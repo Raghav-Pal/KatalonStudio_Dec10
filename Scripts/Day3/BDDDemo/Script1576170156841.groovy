@@ -12,19 +12,8 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Day2/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+not_run: CucumberKW.runFeatureFile('Include/features/Login.feature')
 
-WebUI.click(findTestObject('WEB/Page_OrangeHRM/b_Leave'))
-
-WebUI.click(findTestObject('WEB/Page_OrangeHRM/b_Recruitment'))
-
-WebUI.click(findTestObject('WEB/Page_OrangeHRM/b_Performance'))
-
-WebUI.click(findTestObject('WEB/Page_OrangeHRM/b_Directory'))
-
-WebUI.click(findTestObject('WEB/Page_OrangeHRM/b_Dashboard'))
-
-WebUI.closeBrowser()
+CucumberKW.runFeatureFolder('Include/features')
 

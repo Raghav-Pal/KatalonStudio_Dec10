@@ -12,19 +12,18 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Day2/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+addResult = WS.sendRequest(findTestObject('API/SOAP/Add'))
 
-WebUI.click(findTestObject('WEB/Page_OrangeHRM/b_Leave'))
+String responseBody = addResult.responseBodyContent
 
-WebUI.click(findTestObject('WEB/Page_OrangeHRM/b_Recruitment'))
+def value = new XmlSlurper().parseText(responseBody)
 
-WebUI.click(findTestObject('WEB/Page_OrangeHRM/b_Performance'))
+println(' Value extracted is : ' + value)
 
-WebUI.click(findTestObject('WEB/Page_OrangeHRM/b_Directory'))
+GlobalVariable.NUM1 = value
 
-WebUI.click(findTestObject('WEB/Page_OrangeHRM/b_Dashboard'))
+println(' Global Variable NUM1 is ' + GlobalVariable.NUM1)
 
-WebUI.closeBrowser()
+WS.sendRequestAndVerify(findTestObject('API/SOAP/Multiply', [('num1') : GlobalVariable.NUM1]))
 

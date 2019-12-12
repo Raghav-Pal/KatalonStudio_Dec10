@@ -19,4 +19,14 @@
       <initValue>'hUKwJTbofgPU9eVlw/CnDQ=='</initValue>
       <name>PASSWORD</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'5'</initValue>
+      <name>NUM1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Sarah'</initValue>
+      <name>USERTOUPDATE</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
